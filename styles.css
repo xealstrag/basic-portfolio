@@ -1,0 +1,50 @@
+/* root is the same as grabbing the html tag, but more specific.
+sets the primary, secondary, and bg variables */
+
+:root {
+    --primary: #06b6d4;
+    --secondary: #155e75;
+    --bg: #0c0a09;
+    --hover: 0.7;
+}
+
+/* resets margin and padding, sets the border to be within the parent box, 
+sets the font, and sets the transition to 0.2s */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: unset;
+    transition-duration: 200ms;
+}
+
+body {
+    background: var(--bg);
+    color: var(--primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 14px;
+}
+
+header,
+main,
+footer {
+
+}
+
+nav {
+    display: flex;
+    align-items: space-around;
+    gap: 8px;
+}
+
+nav a {
+    color: var(--secondary)
+}
+
+nav a:hover {
+    opacity: var(--hover);
+}
